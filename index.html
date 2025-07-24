@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetología Profesional YAMI</title>
+    <link rel="icon" href="favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Encabezado con menú de navegación -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="apple-touch-icon.png" alt="Logo BeautyLab">
+                <span>cosmetologiaYAMI</span>
+            </div>
+            
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#" id="about-btn">Nosotros</a></li>
+                    <li><a href="#" id="contact-btn">Contacto</a></li>
+                    <li><a href="#" id="blog-btn">Blog</a></li>
+                </ul>
+                
+             
+            </nav>
+            
+            
+        </div>
+    </header>
+    
+    <!-- Contenido principal -->
+    <main>
+        <div class="container">
+            <!-- Sección Hero -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1> Yami Cosmetología Profesional</h1>
+                    <p>Descubre los mejores tratamientos faciales y corporales con tecnología de punta y profesionales certificados.</p>
+                    <a href="#services" class="btn">Nuestros Servicios</a>
+                </div>
+            </section>
+            
+            <!-- Sección de Servicios -->
+            <section class="services" id="services">
+                <div class="section-title">
+                    <h2>Nuestros Servicios</h2>
+                    <p>Ofrecemos tratamientos personalizados para cuidar tu piel y realzar tu belleza natural.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="https://www.drarigo.com/wp-content/uploads/2021/08/cosmetologist-making-mesotherapy-injection-microne-5gqcyt3_optimized-scaled.jpg" alt="Tratamiento facial">
+                        <div class="service-info">
+                            <h3>Tratamientos Faciales</h3>
+                            <p>Limpieza profunda, hidratación y rejuvenecimiento facial con los mejores productos.</p>
+                            <a href="#" class="btn" id="facial-btn">Más información</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://tse1.explicit.bing.net/th/id/OIP.LMCMgIWrYuVQYM2X26M7jwHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Maquillaje profesional">
+                        <div class="service-info">
+                            <h3>Maquillaje Profesional</h3>
+                            <p>Maquillaje para ocasiones especiales, novias y sesiones fotográficas.</p>
+                            <a href="#" class="btn" id="makeup-btn">Más información</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://th.bing.com/th/id/R.b1b9f87707cf93f7ce5ff9ff0f2f630e?rik=OYnxjH%2b636fbOQ&pid=ImgRaw&r=0" alt="Depilación láser">
+                        <div class="service-info">
+                            <h3>Depilación Láser</h3>
+                            <p>Tecnología avanzada para una depilación efectiva y duradera.</p>
+                            <a href="#" class="btn" id="laser-btn">Más información</a>
+                        </div>
+                         <div class="service-card">
+                            <img src="data:image/webp;base64,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" alt="Depilación láser">
+                        <div class="service-info">
+                            <h3>corte de cabello y manicure</h3>
+                            <p>Tecnología avanzada para una depilación efectiva y duradera.</p>
+                            <a href="#" class="btn" id="laser-btn">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Ventanas flotantes (modales) -->
+    <!-- Modal Nosotros -->
+    <div class="modal" id="about-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-about">&times;</span>
+            <h2>Sobre Nosotros</h2>
+            <p>BeautyLab es un centro de cosmetología profesional fundado en 2010 con el objetivo de ofrecer tratamientos de alta calidad con tecnología de punta.</p>
+            <p>Nuestro equipo está compuesto por profesionales certificados y con amplia experiencia en el área de la estética y el cuidado personal.</p>
+            <p>Nos enorgullecemos de ofrecer un servicio personalizado, adaptado a las necesidades específicas de cada cliente.</p>
+        </div>
+    </div>
+    
+    <!-- Modal Contacto -->
+    <div class="modal" id="contact-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-contact">&times;</span>
+            <h2>Contacto</h2>
+            <p>Estamos ubicados en Av. Principal #123, Ciudad</p>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Email: info@beautylab.com</p>
+            <p>Horario de atención: Lunes a Viernes de 9:00 am a 7:00 pm</p>
+            <form>
+                <input type="text" placeholder="Nombre" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px;">
+                <input type="email" placeholder="Email" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px;">
+                <textarea placeholder="Mensaje" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px; height: 100px;"></textarea>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Modal Blog -->
+    <div class="modal" id="blog-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-blog">&times;</span>
+            <h2>Blog de Cosmetología</h2>
+            <p>Próximamente: Artículos y consejos sobre cuidado de la piel, tendencias en maquillaje y tratamientos estéticos.</p>
+            <p>Suscríbete a nuestro newsletter para recibir las últimas actualizaciones.</p>
+            <input type="email" placeholder="Tu email" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px;">
+            <button class="btn">Suscribirse</button>
+        </div>
+    </div>
+    
+    <!-- Modal Tratamientos Faciales -->
+    <div class="modal" id="facial-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-facial">&times;</span>
+            <h2>Tratamientos Faciales</h2>
+            <p>Nuestros tratamientos faciales incluyen:</p>
+            <ul style="margin: 15px 0 15px 20px;">
+                <li>Limpieza facial profunda</li>
+                <li>Hidratación intensiva</li>
+                <li>Rejuvenecimiento con ácido hialurónico</li>
+                <li>Tratamiento para acné</li>
+                <li>Peeling químico</li>
+            </ul>
+            <p>Duración: 60-90 minutos</p>
+            <p>Precio: Desde S/20</p>
+            <button class="btn">Reservar cita</button>
+        </div>
+    </div>
+    
+    <!-- Modal Maquillaje -->
+    <div class="modal" id="makeup-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-makeup">&times;</span>
+            <h2>Maquillaje Profesional</h2>
+            <p>Servicios de maquillaje:</p>
+            <ul style="margin: 15px 0 15px 20px;">
+                <li>Maquillaje para novias</li>
+                <li>Maquillaje para fiestas</li>
+                <li>Maquillaje editorial/fotográfico</li>
+                <li>Clases de automaquillaje</li>
+            </ul>
+            <p>Duración: 60-120 minutos</p>
+            <p>Precio: Desde S/15</p>
+            <button class="btn">Reservar cita</button>
+        </div>
+    </div>
+    
+    <!-- Modal Depilación Láser -->
+    <div class="modal" id="laser-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-laser">&times;</span>
+            <h2>Depilación Láser</h2>
+            <p>Beneficios de la depilación láser:</p>
+            <ul style="margin: 15px 0 15px 20px;">
+                <li>Resultados duraderos</li>
+                <li>Precisión en áreas pequeñas</li>
+                <li>Menos irritación que otros métodos</li>
+                <li>Tratamiento rápido</li>
+            </ul>
+            <p>Zonas tratadas: Rostro, axilas, brazos, piernas, espalda.</p>
+            <p>Precio: Desde S/80 por sesión</p>
+            <button class="btn">Reservar cita</button>
+        </div>
+    </div>
+    
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>BeautyLab</h3>
+                    <p>Centro especializado en cosmetología y tratamientos estéticos con los más altos estándares de calidad.</p>
+                    <div class="social-links">
+  <a href="https://www.facebook.com/tu_perfil_facebook " target="_blank" class="social-icon facebook" style="color: #1877F2;">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://www.twitter.com/tu_perfil_twitter " target="_blank" class="social-icon twitter" style="color: #1DA1F2;">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.instagram.com/tu_perfil_instagram " target="_blank" class="social-icon instagram" style="color: #E1306C; ">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.youtube.com/tu_canal_youtube " target="_blank" class="social-icon youtube" style="color: #FF0000;">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://web.whatsapp.com:5222/ " target="_blank" class="social-icon whatsapp" style=" color: #25D366;">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://m.me/TU_PAGINA" target="_blank">
+  Enviar mensaje por Messenger
+</a>
+  </div>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <a href="#">Inicio</a>
+                    <a href="#services">Servicios</a>
+                    <a href="#" id="about-footer">Nosotros</a>
+                    <a href="#" id="contact-footer">Contacto</a>
+                    <a href="#" id="blog-footer">Blog</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Horario</h3>
+                    <p>Lunes - Viernes: 9:00 am - 7:00 pm</p>
+                    <p>Sábado: 9:00 am - 3:00 pm</p>
+                    <p>Domingo: Cerrado</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <p>Costado de coso Taurino, En el Distrito de Ticapampa</p>
+                    <p>Tel: 963582058</p>
+                    <p>Email: info@beautylab.com</p>
+                    <p>WhatsApp:963582058</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 COSMETICYAMI.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Botón WhatsApp flotante -->
+  <a href="https://wa.me/963582058" class="wsp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+    <script>
+        // Funcionalidad para el menú toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('active');
+            menuToggle.innerHTML = nav.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Cerrar menú al hacer clic en un enlace
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (nav.classList.contains('active')) {
+                    nav.classList.remove('active');
+                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+        });
+        
+        // Funcionalidad para las ventanas modales
+        document.getElementById('about-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('about-modal').style.display = 'flex';
+        });
+        
+        document.getElementById('contact-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('contact-modal').style.display = 'flex';
+        });
+        
+        document.getElementById('blog-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('blog-modal').style.display = 'flex';
+        });
+        
+        document.getElementById('facial-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('facial-modal').style.display = 'flex';
+        });
+        
+        document.getElementById('makeup-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('makeup-modal').style.display = 'flex';
+        });
+        
+        document.getElementById('laser-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('laser-modal').style.display = 'flex';
+        });
+        
+        // Cerrar modales
+        document.getElementById('close-about').addEventListener('click', function() {
+            document.getElementById('about-modal').style.display = 'none';
+        });
+        
+        document.getElementById('close-contact').addEventListener('click', function() {
+            document.getElementById('contact-modal').style.display = 'none';
+        });
+        
+        document.getElementById('close-blog').addEventListener('click', function() {
+            document.getElementById('blog-modal').style.display = 'none';
+        });
+        
+        document.getElementById('close-facial').addEventListener('click', function() {
+            document.getElementById('facial-modal').style.display = 'none';
+        });
+        
+        document.getElementById('close-makeup').addEventListener('click', function() {
+            document.getElementById('makeup-modal').style.display = 'none';
+        });
+        
+        document.getElementById('close-laser').addEventListener('click', function() {
+            document.getElementById('laser-modal').style.display = 'none';
+        });
+        
+        // Cerrar modal al hacer clic fuera del contenido
+        window.addEventListener('click', function(e) {
+            if (e.target.className === 'modal') {
+                e.target.style.display = 'none';
+            }
+        });
+        
+        // Enlaces del footer
+        document.getElementById('about-footer').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('about-modal').style.display = 'flex';
+        });
+        
+        document.getElementById('contact-footer').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('contact-modal').style.display = 'flex';
+        });
+        
+        document.getElementById('blog-footer').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('blog-modal').style.display = 'flex';
+        });
+    </script>
+</body>
+</html>
